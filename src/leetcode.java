@@ -30,12 +30,12 @@ public class leetcode {
 //        System.out.println(removeDuplicates.removeDuplicates(nums));
 
 //       Merge Sorted Array
-        int[] nums1 = new int[]{0};
-        int[] nums2 = new int[]{1};
-        MergeSortedArray.merge(nums1,0,nums2,1);
-        for (int i=0;i<1;++i){
-            System.out.print(nums1[i]+" --> ");
-        }
+//        int[] nums1 = new int[]{0};
+//        int[] nums2 = new int[]{1};
+//        MergeSortedArray.merge(nums1,0,nums2,1);
+//        for (int i=0;i<1;++i){
+//            System.out.print(nums1[i]+" --> ");
+//        }
 
         long endTime=System.currentTimeMillis();
         System.out.println("程序运行时间： "+(endTime - startTime)+" ms");
