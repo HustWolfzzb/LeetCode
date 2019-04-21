@@ -80,7 +80,21 @@ public class leetcode {
 
 
 //      uniquePaths
-        System.out.println(uniquePath.uniquePaths(51,9));
+//        System.out.println(uniquePath.uniquePaths(100,50));
+
+
+//        3Sum Closest
+//        int[] nums = new int[]{-55,-24,-18,-11,-7,-3,4,5,6,9,11,23,33};
+//        System.out.println(ThreeSumCloested.threeSumClosest(nums,0));
+
+
+//        Search in Rotated Sorted Array
+//        int[] nums = new int[]{1,3};
+//        System.out.println(SearchinRotatedSortedArray.search(nums,0));
+
+
+
+
         long endTime=System.currentTimeMillis();
         System.out.println("程序运行时间： "+(endTime - startTime)+" ms");
     }
