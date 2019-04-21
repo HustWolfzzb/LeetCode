@@ -1,3 +1,4 @@
+package ArrayPart;
 class maxSubArray {
     public static int maxSubArray(int[] nums){
         int sum = 0,maxsub = nums[0];

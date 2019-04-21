@@ -1,3 +1,5 @@
+package ArrayPart;
+
 public class MaxProfit {
     public static int maxProfit2(int[] prices) {
         int maxprofit = 0;

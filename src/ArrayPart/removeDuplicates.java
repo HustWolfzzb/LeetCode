@@ -1,3 +1,5 @@
+package ArrayPart;
+
 public class removeDuplicates {
     public static int removeDuplicates(int[] nums) {
         int p=0;

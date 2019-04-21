@@ -1,3 +1,5 @@
+package ArrayPart;
+
 public class TwoSum {
     public static int[] TwoSum(int[] nums, int target){
         int [] re = new int[2];

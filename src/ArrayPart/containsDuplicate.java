@@ -1,7 +1,10 @@
+package ArrayPart;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
 
 public class containsDuplicate {
     public static boolean containsDuplicate(int[] nums){
