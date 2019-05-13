@@ -1,5 +1,6 @@
 //import java.util.*;
 import ArrayPart.*;
+import LinkListPart.*;
 
 public class leetcode {
     public static void main(String args[]){
@@ -94,8 +95,25 @@ public class leetcode {
 
 
 
-
+//========================链表部分========================
+        int[] nums = new int[]{1,4,5,6,3};
+        int nodeval = 5;
+        ListNode head = new ListNode(nums[0]);
+        ListNode p = head;
+        for(int i=1;i<nums.length;++i){
+             p.next = new ListNode(nums[i]);
+             p = p.next;
+        }
+        p = head;
+        while(p.val != nodeval)
+            p = p.next;
+        deleteNode.deleteNode(p);
+        p=head;
+        while(p!=null){
+            System.out.println(p.val);
+            p=p.next;
+        }
         long endTime=System.currentTimeMillis();
-        System.out.println("程序运行时间： "+(endTime - startTime)+" ms");
+        System.out.println("Running Time: "+(endTime - startTime)+" ms");
     }
 }
