@@ -1,18 +1,23 @@
 package LinkListPart;
 
 public class reverseList {
-    public ListNode reverseList(ListNode head) {
+    public static ListNode reverseList(ListNode head) {
+        ListNode x = head;
+        if(x==null)
+            return null;
+        while(x.next!=null) x=x.next;
+        ListNode newL = new ListNode(x.val);
         ListNode p = head;
-        while(p.next!=null) p=p.next;
-        ListNode newL = new ListNode(p.val);
-        p = head;
-        ListNode t = newL;
-        while(p!=null){
-            newL.next = p;
+        ListNode t = p;
+        while(p!=x){
             t = p;
             p = p.next;
-//            t.next =
+            t.next = newL.next;
+            newL.next = t;
         }
         return newL;
     }
 }
+
+//执行用时 : 1 ms, 在Reverse Linked List的Java提交中击败了54.19% 的用户
+//内存消耗 : 35.1 MB, 在Reverse Linked List的Java提交中击败了69.89% 的用户

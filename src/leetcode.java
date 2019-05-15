@@ -96,6 +96,7 @@ public class leetcode {
 
 
 //========================链表部分========================
+        // 删除链表中的一个节点
 //        int[] nums = new int[]{1,4,5,6,3};
 //        int nodeval = 5;
 //        ListNode head = new ListNode(nums[0]);
@@ -115,8 +116,80 @@ public class leetcode {
 //        }
 
 
+        // 反转链表
+
+//        int[] nums = new int[]{4,4,-3,-2,4};
+//        ListNode head = new ListNode(nums[0]);
+//        ListNode p = head;
+//        for(int i=1;i<nums.length;++i){
+//             p.next = new ListNode(nums[i]);
+//             p = p.next;
+//        }
+//        p = reverseList.reverseList(head);
+//        while(p!=null){
+//            System.out.println(p.val);
+//            p = p.next;
+//        }
+
+        // 合并有序链表
+//        int[] nums1 = new int[]{1,2,3,4};
+//        int[] nums2 = new int[]{2,3,4,5,6};
+//        ListNode head = new ListNode(nums1[0]);
+//        ListNode p = head;
+//        for(int i=1;i<nums1.length;++i){
+//            p.next = new ListNode(nums1[i]);
+//            p = p.next;
+//        }
+//        ListNode head1 = new ListNode(nums2[0]);
+//        ListNode p1 = head1;
+//        for(int i=1;i<nums2.length;++i){
+//            p1.next = new ListNode(nums2[i]);
+//            p1 = p1.next;
+//        }
+//        p = mergeTwoLists.mergeTwoLists(head1,head);
+//        while(p!=null){
+//            System.out.println(p.val);
+//            p = p.next;
+//        }
+
+        // 找出两个链表的相交点
+//        int[] nums1 = new int[]{4,1,8,4,5};
+//        int[] nums2 = new int[]{5,0,1,8,4,5};
+//        ListNode head = new ListNode(nums1[0]);
+//        ListNode p = head;
+//        for(int i=1;i<nums1.length;++i){
+//            p.next = new ListNode(nums1[i]);
+//            p = p.next;
+//        }
+//        ListNode head1 = new ListNode(nums2[0]);
+//        ListNode p1 = head1;
+//        for(int i=1;i<nums2.length;++i){
+//            p1.next = new ListNode(nums2[i]);
+//            p1 = p1.next;
+//        }
+//        p = IntersectionofTwoLinkedLists.getIntersectionNode(head,head1);
+//        if (p==null) System.out.println("NULL");
+//        while(p!=null){
+//            System.out.println(p.val);
+//            p = p.next;
+//        }
+
+        // 链表是否成环
+//        int[] nums1 = new int[]{4,1,8,4,5};
+//        int pos = 2;
+//        ListNode head = new ListNode(nums1);
+//        ListNode p = head;
+//        while (pos != 0){
+//            p=p.next;
+//            pos--;
+//        }
+//        ListNode t = p;
+//        while (t.next!=null) t=t.next;
+//        t.next = p;
+//        System.out.println(hasCycle.hasCycle(head));
 
 
+        //
         long endTime=System.currentTimeMillis();
         System.out.println("Running Time: "+(endTime - startTime)+" ms");
     }
